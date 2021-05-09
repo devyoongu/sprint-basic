@@ -16,8 +16,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @SpringBootTest
-//@Transactional
-@Commit
+@Transactional
+//@Commit
 class MemberServiceIntegerationTest {
 
     @Autowired MemberService memberService;
@@ -27,7 +27,7 @@ class MemberServiceIntegerationTest {
     public void 회원가입() throws Exception {
         //Given
         Member member = new Member();
-        member.setName("hello100");
+        member.setName("hello200");
         //When
         Long saveId = memberService.join(member);
         //Then
