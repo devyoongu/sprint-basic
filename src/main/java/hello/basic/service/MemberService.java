@@ -5,11 +5,13 @@ import hello.basic.repository.MemberRepository;
 import hello.basic.repository.MemoryMemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
 //@Service // @Configuration 클래스에세 빈 수동 등록으로 대체 가능함.
+@Transactional
 public class MemberService {
 //    private final MemberRepository memberRepository = new MemoryMemberRepository(); // 1차
     private final MemberRepository memberRepository; //2차 DI를 받기위한 필드만 선언하고 생성자로 주입받는다.
