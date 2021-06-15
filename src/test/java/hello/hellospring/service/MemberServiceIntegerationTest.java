@@ -1,14 +1,10 @@
-package hello.basic.service;
+package hello.hellospring.service;
 
-import hello.basic.domain.Member;
-import hello.basic.repository.MemberRepository;
-import hello.basic.repository.MemoryMemberRepository;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
+import hello.hellospring.domain.Member;
+import hello.hellospring.repository.MemberRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.annotation.Commit;
 import org.springframework.transaction.annotation.Transactional;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -27,7 +23,7 @@ class MemberServiceIntegerationTest {
     public void 회원가입() throws Exception {
         //Given
         Member member = new Member();
-        member.setName("hello200");
+        member.setName("hello400");
         //When
         Long saveId = memberService.join(member);
         //Then

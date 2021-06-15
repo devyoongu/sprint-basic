@@ -1,4 +1,4 @@
-package hello.basic.domain;
+package hello.hellospring.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -25,6 +25,6 @@ public class Member {
     }
 
     public void setName(String name) {
-        name = name;
+        this.name = name;
     }
 }

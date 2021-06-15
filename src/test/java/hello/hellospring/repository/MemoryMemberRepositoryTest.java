@@ -1,10 +1,8 @@
-package hello.basic.repository;
+package hello.hellospring.repository;
 
-import hello.basic.domain.Member;
-import org.assertj.core.api.Assertions;
+import hello.hellospring.domain.Member;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.test.web.reactive.server.JsonPathAssertions;
 
 import java.util.List;
 
